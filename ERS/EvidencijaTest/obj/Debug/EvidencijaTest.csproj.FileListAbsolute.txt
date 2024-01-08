@@ -1,0 +1,8 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\bin\Debug\EvidencijaTest.exe.config
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\bin\Debug\EvidencijaTest.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\bin\Debug\EvidencijaTest.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\obj\Debug\EvidencijaTest.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\obj\Debug\EvidencijaTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\obj\Debug\EvidencijaTest.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\obj\Debug\EvidencijaTest.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\EvidencijaTest\obj\Debug\EvidencijaTest.pdb

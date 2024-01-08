@@ -1,0 +1,12 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Comon\bin\Debug\Comon.dll
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Comon\bin\Debug\Comon.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Comon\obj\Debug\Comon.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Comon\obj\Debug\Comon.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Comon\obj\Debug\Comon.dll
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Comon\obj\Debug\Comon.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Comon\bin\Debug\Comon.dll
+C:\Users\Darie\Downloads\ERS (1)\ERS\Comon\bin\Debug\Comon.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Comon\obj\Debug\Comon.csproj.AssemblyReference.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Comon\obj\Debug\Comon.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Comon\obj\Debug\Comon.dll
+C:\Users\Darie\Downloads\ERS (1)\ERS\Comon\obj\Debug\Comon.pdb

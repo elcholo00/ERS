@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Darie\\Desktop\\Proj-Git-Wcf-Upload\\ERS1\\ERS\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Darie\\Desktop\\PRKON\\ERS\\ERS\\ERS\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Darie\\Desktop\\Proj-Git-Wcf-Upload\\ERS1\\ERS\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\Darie\\Desktop\\PRKON\\ERS\\ERS\\ERS\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\Darie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Darie\\Desktop\\Proj-Git-Wcf-Upload\\ERS1\\ERS\\Common\\obj\\",
+      "outputPath": "C:\\Users\\Darie\\Desktop\\PRKON\\ERS\\ERS\\ERS\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Darie\\AppData\\Roaming\\NuGet\\NuGet.Config",

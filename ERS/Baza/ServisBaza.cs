@@ -1,10 +1,11 @@
-﻿using Common;
-using Common.Model;
+﻿using Comon;
+using Comon.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
 
 namespace Baza
 {
@@ -16,7 +17,7 @@ namespace Baza
             Baza.InsertAudit(audit);
         }
 
-        public void PrognoziranaPotrosnja(Prognoza p)
+        public void PrognoziranaaPotrosnja(Prognoza p)
         {
             Baza.InsertPrognoza(p);
         }

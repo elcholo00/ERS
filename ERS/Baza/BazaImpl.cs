@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Common.Model;
+using Comon.Model;
 
 namespace Baza
 {
@@ -165,13 +165,35 @@ namespace Baza
                 {
                     while (reader.Read())
                     {
-                        Audit audit = new Audit(reader.GetInt32(0), reader.GetDateTime(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4));
+                        Audit audit = new Audit(reader.GetDateTime(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4));
                         audits.Add(audit);
                     }
                     return audits;
                 }
 
             }
+
+        }
+        public List<Prognoza> GeoPodrucje()
+        {
+
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<Prognoza> prognoze = new List<Prognoza>();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM Prognoza where datum = @datum, GeografskaOblast = @GeografskaOblast";
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Prognoza prognoza = new Prognoza( reader.GetDateTime(1), reader.GetString(2), reader.GetInt32(3), reader.GetFloat(4), reader.GetFloat(5), reader.GetFloat(6));
+                        prognoze.Add(prognoza);
+                    }
+                    return prognoze;
+                }
+
+            }
+
 
         }
 
@@ -267,13 +289,13 @@ namespace Baza
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO Potrosnja(GeografskaOblast,Datum,Sat,PrognoziranaPotrosnja, OstvarenaPotrosnja, Odstupanje) VALUES(@GeografskaOblast, @Datum, @Sat, @PrognoziranaP, @OstvarenaP, @Odstupanje)";
+                command.CommandText = "INSERT INTO Prognoza(GeografskaOblast,Datum,Sat,PPotrosnja, OPotrosnja, Odstupanje) VALUES(@GeografskaOblast, @Datum, @Sat, @PPotrosnja, @OPotrosnja, @Odstupanje)";
 
                 command.Parameters.AddWithValue("@GeografskaOblast", prognoza.GeografskaOblast);
                 command.Parameters.AddWithValue("@Datum", prognoza.Datum);
                 command.Parameters.AddWithValue("@Sat", prognoza.Sat);
-                command.Parameters.AddWithValue("@PrognoziranaP", prognoza.PrognoziranaPotrosnja);
-                command.Parameters.AddWithValue("@OstvarenaP", prognoza.OstvarenaPotrosnja);
+                command.Parameters.AddWithValue("@PPotrosnja", prognoza.PPotrosnja);
+                command.Parameters.AddWithValue("@OPotrosnja", prognoza.OPotrosnja);
                 command.Parameters.AddWithValue("@Odstupanje", prognoza.Odstupanje);
 
 
@@ -299,12 +321,12 @@ namespace Baza
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "UPDATE potrosnja SET GeografskaOblast=@GeografskaOblast,Datum=@Datum, Sat=@Sat, PrognoziranaP=@PrognoziranaPptrosnja, OstvarenaP=@OstvarenaPotrosnja, Odstupanje=@Odstupanje WHERE GeografskaOblast = @GeografskaOblast";
+                command.CommandText = "UPDATE prognoza SET GeografskaOblast=@GeografskaOblast,Datum=@Datum, Sat=@Sat, PrognoziranaP=@PPotrosnja, OstvarenaP=@OPotrosnja, Odstupanje=@Odstupanje WHERE GeografskaOblast = @GeografskaOblast";
                 command.Parameters.AddWithValue("@GeografskaOblast", prognoza.GeografskaOblast);
                 command.Parameters.AddWithValue("@Datum", prognoza.Datum);
                 command.Parameters.AddWithValue("@Sat", prognoza.Sat);
-                command.Parameters.AddWithValue("@PrognoziranaP", prognoza.PrognoziranaPotrosnja);
-                command.Parameters.AddWithValue("@OstvarenaP", prognoza.OstvarenaPotrosnja);
+                command.Parameters.AddWithValue("@PPotrosnja", prognoza.PPotrosnja);
+                command.Parameters.AddWithValue("@OPotrosnja", prognoza.OPotrosnja);
                 command.Parameters.AddWithValue("@Odstupanje", prognoza.Odstupanje);
 
 
@@ -317,7 +339,7 @@ namespace Baza
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM Potrosnja WHERE GeografskaOblast = @GeografskaOblast";
+                command.CommandText = "DELETE FROM Prognoza WHERE GeografskaOblast = @GeografskaOblast";
                 command.Parameters.AddWithValue("@GeografskaOblast", GeoPodrucje);
                 command.ExecuteNonQuery();
             }
@@ -328,26 +350,26 @@ namespace Baza
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM Potrosnja";
+                command.CommandText = "DELETE FROM Prognoza";
                 command.ExecuteNonQuery();
             }
         }
-        public List<Prognoza> GetPotrosnja()
+        public List<Prognoza> GetPrognoza()
         {
 
             using (SqlCommand command = new SqlCommand())
             {
-                List<Prognoza> potrosnje = new List<Prognoza>();
+                List<Prognoza> prognoze = new List<Prognoza>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM Potrosnja";
+                command.CommandText = "SELECT all FROM Prognoza";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Prognoza potrosnja = new Prognoza(reader.GetInt32(0), reader.GetDateTime(1), reader.GetString(2), reader.GetDateTime(3), reader.GetDouble(4), reader.GetDouble(5), reader.GetDouble(6));
-                        potrosnje.Add(potrosnja);
+                        Prognoza prognoza = new Prognoza( reader.GetDateTime(1), reader.GetString(2), reader.GetInt32(3), reader.GetFloat(4), reader.GetFloat(5), reader.GetFloat(6));
+                        prognoze.Add(prognoza);
                     }
-                    return potrosnje;
+                    return prognoze;
                 }
 
             }

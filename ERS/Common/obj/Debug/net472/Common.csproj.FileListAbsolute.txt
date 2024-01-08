@@ -1,0 +1,5 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Common\obj\Debug\net472\Common.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Common\obj\Debug\net472\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Common\obj\Debug\net472\Common.AssemblyInfoInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Common\obj\Debug\net472\Common.AssemblyInfo.cs
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Common\obj\Debug\net472\Common.csproj.CoreCompileInputs.cache

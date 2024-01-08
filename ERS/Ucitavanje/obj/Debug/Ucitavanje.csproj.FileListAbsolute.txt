@@ -1,0 +1,28 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Ucitavanje.exe.config
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Ucitavanje.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Ucitavanje.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Comon.dll
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Evidencija.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Comon.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Evidencija.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\bin\Debug\Evidencija.exe.config
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.CopyComplete
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\obj\Debug\Ucitavanje.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Ucitavanje\obj\Debug\Ucitavanje.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Ucitavanje.exe.config
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Ucitavanje.exe
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Ucitavanje.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Comon.dll
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Evidencija.exe
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Comon.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Evidencija.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\bin\Debug\Evidencija.exe.config
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.AssemblyReference.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\obj\Debug\Ucitavanje.csproj.CopyComplete
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\obj\Debug\Ucitavanje.exe
+C:\Users\Darie\Downloads\ERS (1)\ERS\Ucitavanje\obj\Debug\Ucitavanje.pdb

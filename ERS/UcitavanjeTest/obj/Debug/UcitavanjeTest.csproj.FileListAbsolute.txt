@@ -1,0 +1,8 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\bin\Debug\UcitavanjeTest.exe.config
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\bin\Debug\UcitavanjeTest.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\bin\Debug\UcitavanjeTest.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\obj\Debug\UcitavanjeTest.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\obj\Debug\UcitavanjeTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\obj\Debug\UcitavanjeTest.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\obj\Debug\UcitavanjeTest.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\UcitavanjeTest\obj\Debug\UcitavanjeTest.pdb

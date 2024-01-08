@@ -1,0 +1,8 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\bin\Debug\Evidencija.exe.config
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\bin\Debug\Evidencija.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\bin\Debug\Evidencija.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\obj\Debug\Evidencija.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\obj\Debug\Evidencija.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\obj\Debug\Evidencija.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\obj\Debug\Evidencija.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Evidencija\obj\Debug\Evidencija.pdb

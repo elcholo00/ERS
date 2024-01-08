@@ -46,17 +46,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IUcitavanje.cs" />
+    <Compile Include="Obrada.cs" />
+    <Compile Include="ObradaPodatakaCSV.cs" />
+    <Compile Include="ObradaPodatakaTXT.cs" />
+    <Compile Include="ObradaPodatakaXML.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UcitavanjeImpl.cs" />
+    <Compile Include="UIHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{85371763-04d6-4756-98ca-6871641c9f70}</Project>
-      <Name>Common</Name>
+    <ProjectReference Include="..\Comon\Comon.csproj">
+      <Project>{06e48f32-49af-4da1-8e87-ea27302fda22}</Project>
+      <Name>Comon</Name>
     </ProjectReference>
     <ProjectReference Include="..\Evidencija\Evidencija.csproj">
       <Project>{36534BD4-FC5C-43A4-847F-6DFFD4EBDD5A}</Project>

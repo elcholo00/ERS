@@ -21,3 +21,17 @@ C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\obj\Debug\Baza.csproj.SuggestedBin
 C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\obj\Debug\Baza.csproj.CoreCompileInputs.cache
 C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\obj\Debug\Baza.exe
 C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\obj\Debug\Baza.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\bin\Debug\Comon.dll
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\bin\Debug\Comon.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\Baza\obj\Debug\Baza.csproj.CopyComplete
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\bin\Debug\Baza.exe.config
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\bin\Debug\Baza.exe
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\bin\Debug\Baza.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\bin\Debug\Comon.dll
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\bin\Debug\Comon.pdb
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\obj\Debug\Baza.csproj.AssemblyReference.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\obj\Debug\Baza.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\obj\Debug\Baza.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\obj\Debug\Baza.csproj.CopyComplete
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\obj\Debug\Baza.exe
+C:\Users\Darie\Downloads\ERS (1)\ERS\Baza\obj\Debug\Baza.pdb

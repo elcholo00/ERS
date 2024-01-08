@@ -1,0 +1,8 @@
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\bin\Debug\IspisTest.exe.config
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\bin\Debug\IspisTest.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\bin\Debug\IspisTest.pdb
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\obj\Debug\IspisTest.csproj.AssemblyReference.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\obj\Debug\IspisTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\obj\Debug\IspisTest.csproj.CoreCompileInputs.cache
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\obj\Debug\IspisTest.exe
+C:\Users\Darie\Desktop\PRKON\ERS\ERS\ERS\IspisTest\obj\Debug\IspisTest.pdb

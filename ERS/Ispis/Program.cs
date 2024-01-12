@@ -16,22 +16,42 @@ namespace Ispis
         {
 
             ChannelFactory<IIspis> channel =
-                new ChannelFactory<IIspis>("ServisBaza");
+                new ChannelFactory<IIspis>("Servis");
 
             IIspis proxy = channel.CreateChannel();
-
-            Audit a = new Audit(1, new DateTime(2022, 10, 10), "ahsdjkas1", "jkhakjshdjkhkahsd", 25);
-            Audit a1 = new Audit(2, new DateTime(2022, 11, 10), "ahsdjkas2", "jkhakjshdjkhkahsd", 25);
-            Audit a2 = new Audit(3, new DateTime(2022, 12, 10), "ahsdjkas3", "jkhakjshdjkhkahsd", 25);
-
-            //proxy.Audit(a);
-            //proxy.Audit(a1);
-           // proxy.Audit(a2);
+            //2020-05-07 00:00:00.000
+            List<List<Prognoza>> lista = proxy.Izracunaj(new DateTime(2020,5,7,0,0,0),"BGD");
 
 
-            Prognoza p = new Prognoza(1, new DateTime(2022, 10, 10), "GEO", 23, 10, 20, 10);
 
-           // proxy.PrognoziranaaPotrosnja(p);
+            
+            
+
+
+            List<Prognoza> izracunato=new List<Prognoza>();
+
+
+            for (int i = 0;i< lista[0].Count;i++)
+            {
+                Prognoza p=new Prognoza();
+
+                float odstupanje = (Math.Abs(lista[0][i].OPotrosnja - lista[1][i].PPotrosnja) / lista[0][i].OPotrosnja )* 100.0f;
+
+                p.PPotrosnja = lista[1][i].PPotrosnja;
+                p.OPotrosnja = lista[0][i].OPotrosnja;
+                p.Odstupanje = odstupanje;
+                p.GeografskaOblast= lista[1][i].GeografskaOblast;
+                p.Sat= lista[1][i].Sat;
+                p.Datum= lista[0][i].Datum;
+                izracunato.Add(p);
+
+            }
+
+
+            foreach (var item in izracunato)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.Read();
         }

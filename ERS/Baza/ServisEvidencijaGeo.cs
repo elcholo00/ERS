@@ -8,11 +8,17 @@ using System.Threading.Tasks;
 
 namespace Baza
 {
-    internal class ServisEvidencijaGeo : IEvidencijaGeo
+    public class ServisEvidencijaGeo : IEvidencijaGeo
     {
-        public List<GeoPodrucje> evidencija(string Ime, int Sirina)
+        BazaImpl baza = BazaImpl.GetBaza();
+        public List<GeoPodrucje> evidencija()
         {
-            throw new NotImplementedException();
+            return baza.evidencijaGeoPodrucja();
+        }
+
+        public void ubaci(GeoPodrucje geo)
+        {
+            baza.InsertGeoPodrucje(geo);
         }
     }
 }

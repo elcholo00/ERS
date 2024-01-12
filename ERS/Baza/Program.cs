@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
+using Comon;
 
 namespace Baza
 {
@@ -13,24 +14,37 @@ namespace Baza
         static void Main(string[] args)
         {
 
-            // BazaImpl baza = BazaImpl.GetBaza();
+            ServiceHost host = new ServiceHost(typeof(ServisBaza));
+
+            host.AddServiceEndpoint(typeof(IEvidencija),
+                 new NetTcpBinding(),
+               new Uri("net.tcp://localhost:4000/IEvidencija"));
+            host.Open();
+            Console.WriteLine("Servis1 je uspesno pokrenut");
 
 
-            //Audit a=new Audit(baza.getNextAuditId(),new DateTime(2022,10,10),"ajkgsd","SRB",10);
+            ServiceHost host1 = new ServiceHost(typeof(ServisIspiscs));
+            
+                host1.AddServiceEndpoint(typeof(IIspis),
+                 new NetTcpBinding(),
+               new Uri("net.tcp://localhost:4001/IIspis"));
+
+                host1.Open();
+                Console.WriteLine("Servis2 je uspesno pokrenut");
 
 
-            //baza.InsertAudit(a);
-            //baza.DeleteAudit(a.Id);
+            ServiceHost host2 = new ServiceHost(typeof(ServisEvidencijaGeo));
 
-            // GeoPodrucje geo = new GeoPodrucje("VOJ", "VOJVODINA", 102032);
+            host2.AddServiceEndpoint(typeof(IEvidencijaGeo),
+             new NetTcpBinding(),
+           new Uri("net.tcp://localhost:4002/IEvidencijaGeo"));
 
-            using (ServiceHost host = new ServiceHost(typeof(ServisBaza)))
-            {
-                host.Open();
-                Console.WriteLine("Servis je uspesno pokrenut");
-                Console.ReadKey();
-            }
+            host2.Open();
+            Console.WriteLine("Servis2 je uspesno pokrenut");
+            Console.ReadKey();
+            
 
+            
 
         }
     }

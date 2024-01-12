@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ispis
+namespace BazaTest
 {
-    public interface IIspis
+    internal class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

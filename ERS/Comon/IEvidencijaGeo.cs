@@ -8,10 +8,14 @@ using System.Threading.Tasks;
 
 namespace Comon
 {
+    [ServiceContract]
     public interface IEvidencijaGeo
     {
         [OperationContract]
-        List<GeoPodrucje> evidencija(string Ime, int Sirina);
+        List<GeoPodrucje> evidencija();
+
+        [OperationContract]
+        void ubaci(GeoPodrucje geo);
 
     }
 }

@@ -68,6 +68,14 @@ namespace Ucitavanje
                 {
                     ostvarenaP = potrosnja;
                 }
+                List<string> lista = Proxy.GeoPodr();
+                if (!lista.Contains(geografskaOblast))
+                {
+                    GeoPodrucje geo = new GeoPodrucje();
+                    geo.Sifra = geografskaOblast;
+                    geo.Ime = geografskaOblast;
+                    Proxy.upisiOblast(geo);
+                }
 
                 Prognoza novaPotrosnja = new Prognoza(datum, geografskaOblast, sat, prognoziranaP, ostvarenaP, 0);
                 Console.WriteLine(novaPotrosnja);

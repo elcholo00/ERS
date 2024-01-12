@@ -10,10 +10,18 @@ namespace Baza
 {
     public class ServisIspiscs : IIspis
     {
-
-        public List<Prognoza> Izracunaj(DateTime datum, string GeoPodrucje)
+        BazaImpl baza = BazaImpl.GetBaza();
+        public List<List<Prognoza>> Izracunaj(DateTime datum, string GeoPodrucje)
         {
-            throw new NotImplementedException();
+            List<Prognoza> ostvarene = baza.OstvGeoPodrucje(datum, GeoPodrucje);
+            List<Prognoza> prognozirne = baza.ProgGeoPodrucje(datum, GeoPodrucje);
+
+            List < List <Prognoza>> povratna=new List<List<Prognoza>>();
+            povratna.Add(ostvarene);
+            povratna.Add(prognozirne);
+
+
+            return povratna;
         }
 
      

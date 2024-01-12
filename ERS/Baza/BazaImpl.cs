@@ -160,7 +160,7 @@ namespace Baza
             {
                 List<Audit> audits = new List<Audit>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM audit";
+                command.CommandText = "SELECT * FROM Audit";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -174,28 +174,99 @@ namespace Baza
             }
 
         }
-        public List<Prognoza> GeoPodrucje()
+        public List<Prognoza> ProgGeoPodrucje(DateTime datum, string geoOblast)
         {
 
             using (SqlCommand command = new SqlCommand())
             {
                 List<Prognoza> prognoze = new List<Prognoza>();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM Prognoza where datum = @datum, GeografskaOblast = @GeografskaOblast";
+                command.CommandText = "SELECT Sat, PPotrosnja FROM Prognoza where Datum = @datum and GeografskaOblast = @GeografskaOblast and OPotrosnja = 0";
+                command.Parameters.AddWithValue("@datum", datum);
+                command.Parameters.AddWithValue("@GeografskaOblast", geoOblast);
+
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
+
                     while (reader.Read())
                     {
-                        Prognoza prognoza = new Prognoza( reader.GetDateTime(1), reader.GetString(2), reader.GetInt32(3), reader.GetFloat(4), reader.GetFloat(5), reader.GetFloat(6));
-                        prognoze.Add(prognoza);
+
+                        int Sat = reader.GetInt32(0);
+                        float PPotrosnja = (float)reader.GetDouble(1);
+
+                        Prognoza p = new Prognoza();
+                        p.Sat = Sat;
+                        p.PPotrosnja = PPotrosnja;
+                        p.GeografskaOblast = geoOblast;
+                        p.Datum = datum;
+                        p.OPotrosnja = 0;
+                        p.Odstupanje = 0;
+                        prognoze.Add(p);
                     }
                     return prognoze;
                 }
 
             }
-
-
         }
+
+        public List<Prognoza> OstvGeoPodrucje(DateTime datum,string geoOblast)
+        {
+
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<Prognoza> prognoze = new List<Prognoza>();
+                command.Connection = connection;
+                command.CommandText = "SELECT Sat, OPotrosnja FROM Prognoza where Datum = @datum and GeografskaOblast = @GeografskaOblast and PPotrosnja = 0";
+                command.Parameters.AddWithValue("@datum", datum);
+                command.Parameters.AddWithValue("@GeografskaOblast", geoOblast);
+                
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+
+                    while (reader.Read())
+                    {
+                       
+                        int Sat = reader.GetInt32(0);
+                        float OPotrosnja =(float) reader.GetDouble(1);
+                        
+                        Prognoza p = new Prognoza();
+                        p.Sat= Sat;
+                        p.OPotrosnja= OPotrosnja;
+                        p.GeografskaOblast= geoOblast;
+                        p.Datum = datum;
+                        p.PPotrosnja = 0;
+                        p.Odstupanje = 0;
+                        prognoze.Add(p);
+                    }
+                    return prognoze;
+                }
+
+            }
+        }
+
+        public List<GeoPodrucje> evidencijaGeoPodrucja()
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<GeoPodrucje> oblasti = new List<GeoPodrucje>();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM GeografskaPodrucja";
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string ime = reader.GetString(1);
+                        string sifra = reader.GetString(2);
+                        GeoPodrucje GOblast = new GeoPodrucje(sifra,ime,0);
+                        oblasti.Add(GOblast);
+                    }
+                    return oblasti;
+                }
+
+            }
+        }
+
+
 
         public void InsertGeoPodrucje(GeoPodrucje GPodrucje)
         {
@@ -203,12 +274,12 @@ namespace Baza
             {
 
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO GeoPodrucje (VremePokusajaUcitavanja,ImeFajlova,Lokacija) VALUES (@VremePokusaja,@ImeFajlova,@Lokacija1)";
+                command.CommandText = "INSERT INTO GeografskaPodrucja (Ime,Sifra) VALUES (@Ime,@Sifra)";
 
 
-                command.Parameters.AddWithValue("@VremePokusaja", GPodrucje.Sifra);
-                command.Parameters.AddWithValue("@ImeFajlova", GPodrucje.Ime);
-                command.Parameters.AddWithValue("@Lokacija1", GPodrucje.Sirina);
+                command.Parameters.AddWithValue("@Ime", GPodrucje.Ime);
+                command.Parameters.AddWithValue("@Sifra", GPodrucje.Sifra);
+               
 
 
 
@@ -268,12 +339,12 @@ namespace Baza
             {
                 List<GeoPodrucje> oblasti = new List<GeoPodrucje>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM GeografskaOblast";
+                command.CommandText = "SELECT * FROM GeografskaPodrucja";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        GeoPodrucje GOblast = new GeoPodrucje(reader.GetString(0), reader.GetString(1), reader.GetInt32(2));
+                        GeoPodrucje GOblast = new GeoPodrucje(reader.GetString(1), reader.GetString(2), 0);
                         oblasti.Add(GOblast);
                     }
                     return oblasti;
@@ -361,21 +432,21 @@ namespace Baza
             {
                 List<Prognoza> prognoze = new List<Prognoza>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM Prognoza";
+                command.CommandText = "SELECT * FROM Prognoza";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Prognoza prognoza = new Prognoza( reader.GetDateTime(1), reader.GetString(2), reader.GetInt32(3), reader.GetFloat(4), reader.GetFloat(5), reader.GetFloat(6));
+                        Prognoza prognoza = new Prognoza(reader.GetDateTime(1), reader.GetString(2), reader.GetInt32(3), (float)reader.GetDouble(4), (float)reader.GetDouble(5), (float)reader.GetDouble(6)); 
                         prognoze.Add(prognoza);
                     }
                     return prognoze;
                 }
 
             }
-
-
         }
+
+
     }
 }
     

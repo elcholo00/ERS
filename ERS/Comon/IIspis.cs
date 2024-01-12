@@ -14,7 +14,7 @@ namespace Comon
 
         [OperationContract]
 
-        List<Prognoza> Izracunaj(DateTime datum, string GeoPodrucje);
+        List<List<Prognoza>> Izracunaj(DateTime datum, string GeoPodrucje);
 
 
     }

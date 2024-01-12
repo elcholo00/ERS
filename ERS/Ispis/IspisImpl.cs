@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ispis
 {
-    public class IspisImpl : IIspis
+    public class IspisImpl 
     {
     }
 }
